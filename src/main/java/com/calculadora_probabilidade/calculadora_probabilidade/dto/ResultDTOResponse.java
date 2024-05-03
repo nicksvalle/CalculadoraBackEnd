@@ -15,7 +15,7 @@ public class ResultDTOResponse {
 
     private String result;
 
-    private String res1;
+    private double res1;
     
-    private String res2;
+    private double res2;
 }
