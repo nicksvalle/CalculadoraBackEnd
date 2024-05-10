@@ -1,1 +1,1 @@
-INSERT INTO resultado(result, res1, res2) VALUES('2', '10', '5');
+INSERT INTO resultado(resultsimples, resultcomposta, res1, res2, res3, res4) VALUES('2', 'Composto', '10', '5', '15', '20');

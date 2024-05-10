@@ -16,18 +16,24 @@ public class ResultMapper {
     
     public static ResultEntity toEntity(ResultDTORequest resultDTORequest){
         ResultEntity resultEntity = new ResultEntity();
-            resultEntity.setResult(resultDTORequest.getResult());
+            resultEntity.setResultSimples(resultDTORequest.getResultSimples());
+            resultEntity.setResultComposta(resultDTORequest.getResultComposta());
             resultEntity.setRes1(resultDTORequest.getRes1());
             resultEntity.setRes2(resultDTORequest.getRes2());
+            resultEntity.setRes3(resultDTORequest.getRes3());
+            resultEntity.setRes4(resultDTORequest.getRes4());
         return resultEntity;
     }
 
     public static ResultDTOResponse toDTO(ResultEntity resultEntity){
         return new ResultDTOResponse(
             resultEntity.getId(),
-            resultEntity.getResult(),
+            resultEntity.getResultSimples(),
+            resultEntity.getResultComposta(),
             resultEntity.getRes1(),
-            resultEntity.getRes2()
+            resultEntity.getRes2(),
+            resultEntity.getRes3(),
+            resultEntity.getRes4()
         );
     }
 

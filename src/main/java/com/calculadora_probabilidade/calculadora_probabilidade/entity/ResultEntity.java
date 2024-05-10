@@ -17,12 +17,21 @@ public class ResultEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column( name = "result")
-    private String result;
+    @Column(name = "resultsimples") 
+    private String resultSimples;
 
-    @Column( name = "res1")
+    @Column(name = "resultcomposta") 
+    private String resultComposta;
+
+    @Column(name = "res1")
     private double res1;
 
-    @Column( name = "res2")
+    @Column(name = "res2")
     private double res2;
+
+    @Column(name = "res3") 
+    private double res3;
+
+    @Column(name = "res4") 
+    private double res4;
 }

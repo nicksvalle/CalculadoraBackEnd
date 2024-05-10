@@ -13,9 +13,15 @@ public class ResultDTOResponse {
     
     private Long id;
 
-    private String result;
+    private String resultSimples; 
+
+    private String resultComposta; 
 
     private double res1;
-    
+
     private double res2;
+
+    private double res3; 
+
+    private double res4; 
 }
