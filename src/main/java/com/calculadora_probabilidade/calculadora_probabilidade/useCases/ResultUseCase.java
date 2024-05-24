@@ -24,12 +24,9 @@ public class ResultUseCase {
         try {
             var updateResult = this.resultRepository.findById(id)
                                     .orElseThrow(() -> new EntityNotFoundException("Result not found"));
-            updateResult.setResultSimples(resultEntity.getResultSimples()); // Alteração: Renomeando o método set
-            updateResult.setResultComposta(resultEntity.getResultComposta()); // Adição: definindo o novo campo
-            updateResult.setRes1(resultEntity.getRes1());
-            updateResult.setRes2(resultEntity.getRes2());
-            updateResult.setRes3(resultEntity.getRes3()); // Adição: definindo o novo campo
-            updateResult.setRes4(resultEntity.getRes4()); // Adição: definindo o novo campo
+            updateResult.setMedia(resultEntity.getMedia()); 
+            updateResult.setVariancia(resultEntity.getVariancia()); 
+            updateResult.setDesvioPadrao(resultEntity.getDesvioPadrao());
             this.resultRepository.save(updateResult);
         } catch (EntityNotFoundException e) {
             throw new EntityNotFoundException("Result not found");

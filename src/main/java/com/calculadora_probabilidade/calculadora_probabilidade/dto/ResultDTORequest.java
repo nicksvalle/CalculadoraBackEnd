@@ -11,15 +11,13 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class ResultDTORequest {
     
-    private String resultSimples;
+    private double media;
 
-    private String resultComposta;
+    private double variancia;
 
-    private double res1;
+    private double desvioPadrao;
 
-    private double res2;
+    private double num1;
 
-    private double res3;
-
-    private double res4;
+    private double num2;
 }

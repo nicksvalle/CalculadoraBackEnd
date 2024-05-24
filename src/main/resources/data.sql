@@ -1,1 +1,1 @@
-INSERT INTO resultado(resultsimples, resultcomposta, res1, res2, res3, res4) VALUES('2', 'Composto', '10', '5', '15', '20');
+INSERT INTO resultado(num1, num2, media, variancia, desvio_padrao) VALUES('1.00', '1,00','2.00', '3,00', '1.50');

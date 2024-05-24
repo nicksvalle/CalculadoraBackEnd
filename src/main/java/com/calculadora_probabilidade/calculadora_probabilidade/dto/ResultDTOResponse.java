@@ -13,15 +13,13 @@ public class ResultDTOResponse {
     
     private Long id;
 
-    private String resultSimples; 
+    private double num1;
 
-    private String resultComposta; 
+    private double num2;
 
-    private double res1;
+    private double media;
 
-    private double res2;
+    private double variancia;
 
-    private double res3; 
-
-    private double res4; 
+    private double desvioPadrao;
 }

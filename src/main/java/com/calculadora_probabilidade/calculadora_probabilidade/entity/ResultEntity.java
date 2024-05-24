@@ -17,21 +17,19 @@ public class ResultEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "resultsimples") 
-    private String resultSimples;
+    @Column(name = "num1")
+    private double num1;
 
-    @Column(name = "resultcomposta") 
-    private String resultComposta;
+    @Column(name = "num2")
+    private double num2;
 
-    @Column(name = "res1")
-    private double res1;
+    @Column(name = "media") 
+    private double media;
 
-    @Column(name = "res2")
-    private double res2;
+    @Column(name = "variancia") 
+    private double variancia;
 
-    @Column(name = "res3") 
-    private double res3;
+    @Column(name = "desvio_padrao")
+    private double desvioPadrao;
 
-    @Column(name = "res4") 
-    private double res4;
 }

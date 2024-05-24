@@ -16,24 +16,22 @@ public class ResultMapper {
     
     public static ResultEntity toEntity(ResultDTORequest resultDTORequest){
         ResultEntity resultEntity = new ResultEntity();
-            resultEntity.setResultSimples(resultDTORequest.getResultSimples());
-            resultEntity.setResultComposta(resultDTORequest.getResultComposta());
-            resultEntity.setRes1(resultDTORequest.getRes1());
-            resultEntity.setRes2(resultDTORequest.getRes2());
-            resultEntity.setRes3(resultDTORequest.getRes3());
-            resultEntity.setRes4(resultDTORequest.getRes4());
+            resultEntity.setNum1(resultDTORequest.getNum1());
+            resultEntity.setNum2(resultDTORequest.getNum2());
+            resultEntity.setMedia(resultDTORequest.getMedia());
+            resultEntity.setVariancia(resultDTORequest.getVariancia());
+            resultEntity.setDesvioPadrao(resultDTORequest.getDesvioPadrao());
         return resultEntity;
     }
 
     public static ResultDTOResponse toDTO(ResultEntity resultEntity){
         return new ResultDTOResponse(
             resultEntity.getId(),
-            resultEntity.getResultSimples(),
-            resultEntity.getResultComposta(),
-            resultEntity.getRes1(),
-            resultEntity.getRes2(),
-            resultEntity.getRes3(),
-            resultEntity.getRes4()
+            resultEntity.getNum1(),
+            resultEntity.getNum2(),
+            resultEntity.getMedia(),
+            resultEntity.getVariancia(),
+            resultEntity.getDesvioPadrao()
         );
     }
 
