@@ -16,8 +16,6 @@ public class ResultMapper {
     
     public static ResultEntity toEntity(ResultDTORequest resultDTORequest){
         ResultEntity resultEntity = new ResultEntity();
-            resultEntity.setNum1(resultDTORequest.getNum1());
-            resultEntity.setNum2(resultDTORequest.getNum2());
             resultEntity.setMedia(resultDTORequest.getMedia());
             resultEntity.setVariancia(resultDTORequest.getVariancia());
             resultEntity.setDesvioPadrao(resultDTORequest.getDesvioPadrao());
@@ -27,8 +25,7 @@ public class ResultMapper {
     public static ResultDTOResponse toDTO(ResultEntity resultEntity){
         return new ResultDTOResponse(
             resultEntity.getId(),
-            resultEntity.getNum1(),
-            resultEntity.getNum2(),
+            resultEntity.getNumeros(),
             resultEntity.getMedia(),
             resultEntity.getVariancia(),
             resultEntity.getDesvioPadrao()

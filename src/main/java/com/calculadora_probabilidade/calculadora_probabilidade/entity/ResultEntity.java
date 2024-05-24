@@ -17,11 +17,8 @@ public class ResultEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "num1")
-    private double num1;
-
-    @Column(name = "num2")
-    private double num2;
+    @Column(name = "numeros")
+    private String numeros;
 
     @Column(name = "media") 
     private double media;

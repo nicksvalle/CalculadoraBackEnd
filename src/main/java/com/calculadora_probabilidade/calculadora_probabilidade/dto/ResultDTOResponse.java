@@ -13,9 +13,7 @@ public class ResultDTOResponse {
     
     private Long id;
 
-    private double num1;
-
-    private double num2;
+    private String numeros;
 
     private double media;
 

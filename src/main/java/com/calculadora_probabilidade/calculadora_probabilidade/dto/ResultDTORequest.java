@@ -11,13 +11,11 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class ResultDTORequest {
     
+    private String numeros;
+
     private double media;
 
     private double variancia;
 
     private double desvioPadrao;
-
-    private double num1;
-
-    private double num2;
 }
